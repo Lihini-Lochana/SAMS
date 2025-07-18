@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="AnchorPane1_login" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #82ccdd;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.sams.controller.LoginController">
+   <children>
+      <Label layoutX="215.0" layoutY="63.0" text="Login Form" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="147.0" text="Username:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="203.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUname" layoutX="247.0" layoutY="144.0" prefHeight="25.0" prefWidth="250.0" />
+      <Button fx:id="btnLogin" layoutX="240.0" layoutY="286.0" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #4a69bd;" text="Login" textAlignment="CENTER" textFill="#261c1c">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtPassword" layoutX="247.0" layoutY="200.0" prefHeight="26.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>
