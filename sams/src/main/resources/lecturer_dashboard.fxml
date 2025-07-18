@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPaneLecDash" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="565.0" style="-fx-background-color: #4a69bd;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.sams.controller.LecturerDashboardController">
+   <Pane fx:id="PaneLecturerDash" layoutX="205.0" prefHeight="551.0" prefWidth="364.0" style="-fx-background-color: #82ccdd;">
+      <Label layoutX="26.0" layoutY="27.0" text="Welcome Lecturer!">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </Pane>
+   <ToolBar fx:id="toolBar1" layoutY="233.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+      <Button fx:id="btnAttendanceManage" mnemonicParsing="false" onAction="#OnActionAttendanceManage" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: #78e08f;" text="Attendance Marking" />
+   </ToolBar>
+   <ToolBar fx:id="toolBar2" layoutY="278.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+      <Button fx:id="btnClassScheduling" mnemonicParsing="false" onAction="#OnActionClassScheduling" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: #78e08f;" text="Class Scheduling" />
+   </ToolBar>
+   <ToolBar fx:id="toolBar3" layoutY="374.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+      <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#OnActionLogout" prefHeight="26.0" prefWidth="181.0" style="-fx-background-color: #78e08f;" text="Log out" />
+   </ToolBar>
+</AnchorPane>
