@@ -15,7 +15,9 @@
 
 
         <mapping class="com.ijse.sams.entity.User"/>
-
+        <mapping class="com.ijse.sams.entity.Course"/>
+        <mapping class="com.ijse.sams.entity.Student"/>
+        <mapping class="com.ijse.sams.entity.Lecturer"/>
 
     </session-factory>
 </hibernate-configuration>
