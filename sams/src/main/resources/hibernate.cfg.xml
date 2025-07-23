@@ -19,6 +19,8 @@
         <mapping class="com.ijse.sams.entity.Student"/>
         <mapping class="com.ijse.sams.entity.Lecturer"/>
         <mapping class="com.ijse.sams.entity.ClassSchedule"/>
+        <mapping class="com.ijse.sams.entity.Attendance"/>
+        <mapping class="com.ijse.sams.entity.Subject"/>
 
     </session-factory>
 </hibernate-configuration>
