@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="AnchorPaneAdminDash" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #82ccdd;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.sams.controller.AdminDashboardController">
+   <children>
+      <ToolBar layoutY="86.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+         <items>
+            <Button fx:id="btnCourseManage" mnemonicParsing="false" onAction="#OnActionCourseManage" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #78e08f;" text="Course Management" />
+         </items>
+      </ToolBar>
+      <ToolBar layoutY="134.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+         <items>
+            <Button fx:id="btnStudentManage" mnemonicParsing="false" onAction="#OnActionStudentManage" prefHeight="26.0" prefWidth="183.0" style="-fx-background-color: #78e08f;" text="Student Management" />
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="btnLecturerManage" layoutY="182.0" onDragDetected="#OnActionLecturerManage" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+         <items>
+            <Button fx:id="btnLecManage" mnemonicParsing="false" onAction="#OnActionLecManage" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: #78e08f;" text="Lecturer Management" />
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="btnClassScheduling" layoutY="227.0" onDragDetected="#OnActionClassScheduling" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+         <items>
+            <Button fx:id="btnClassScheduling" mnemonicParsing="false" onAction="#OnActionClassScheduling" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: #78e08f;" text="Class Scheduling" />
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="btnShowReports" layoutY="275.0" onDragDetected="#OnActionShowReports" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+         <items>
+            <Button fx:id="btnShowReports" mnemonicParsing="false" onAction="#OnActionShowReports" prefHeight="26.0" prefWidth="182.0" style="-fx-background-color: #78e08f;" text="Show Reports" />
+         </items>
+      </ToolBar>
+      <ToolBar layoutY="323.0" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;">
+         <items>
+            <Button fx:id="btnLogout" mnemonicParsing="false" onAction="#OnActionLogout" prefHeight="26.0" prefWidth="181.0" style="-fx-background-color: #78e08f;" text="Log out" />
+         </items>
+      </ToolBar>
+      <ToolBar layoutY="-8.0" prefHeight="94.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;" />
+      <ToolBar layoutY="371.0" prefHeight="94.0" prefWidth="200.0" style="-fx-background-color: #4a69bd;" />
+      <Pane fx:id="PaneAdminDash" layoutX="200.0" prefHeight="465.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="26.0" layoutY="27.0" text="Welcom Admin!">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="AnchorPaneReports" prefHeight="624.0" prefWidth="679.0" style="-fx-background-color: #55efc4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.sams.controller.ReportController">
+   <children>
+      <Label layoutX="230.0" layoutY="27.0" text="Attendance Reports">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSId" layoutX="45.0" layoutY="103.0" prefHeight="26.0" prefWidth="186.0" promptText="Student ID" />
+      <TextField fx:id="txtCId" layoutX="385.0" layoutY="103.0" prefHeight="26.0" prefWidth="186.0" promptText="Course ID" />
+      <Button fx:id="btnSId" layoutX="243.0" layoutY="104.0" mnemonicParsing="false" onAction="#OnViewByStudent" style="-fx-background-color: #32ff7e;" text="By Student" />
+      <Button fx:id="btnCId" layoutX="580.0" layoutY="103.0" mnemonicParsing="false" onAction="#OnViewByCourse" style="-fx-background-color: #D6A2E8;" text="By Course" />
+      <DatePicker fx:id="dpFrom" layoutX="45.0" layoutY="169.0" prefHeight="26.0" prefWidth="186.0" promptText="From" />
+      <DatePicker fx:id="dpTo" layoutX="269.0" layoutY="169.0" prefHeight="26.0" prefWidth="186.0" promptText="To" />
+      <Button fx:id="btnDate" layoutX="555.0" layoutY="169.0" mnemonicParsing="false" onAction="#OnViewByDate" style="-fx-background-color: #ffdd59;" text="By Date Range" />
+      <TableView fx:id="tblReports" layoutX="45.0" layoutY="244.0" prefHeight="363.0" prefWidth="610.0">
+        <columns>
+          <TableColumn fx:id="colStu" prefWidth="124.79999542236328" text="Student" />
+            <TableColumn fx:id="colCourse" prefWidth="120.79998779296875" text="Course" />
+            <TableColumn fx:id="colDate" prefWidth="226.39999389648438" text="Date" />
+            <TableColumn fx:id="colStatus" prefWidth="137.60003662109375" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPaneAttendanceMark" prefHeight="591.0" prefWidth="719.0" style="-fx-background-color: #9AECDB;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.sams.controller.AttendanceMarkingController">
+   <children>
+      <Label layoutX="281.0" layoutY="27.0" text="Mark Attendance">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="119.0" text="Seclect Class:" />
+      <ComboBox fx:id="cmbClass" layoutX="165.0" layoutY="115.0" prefHeight="26.0" prefWidth="206.0" promptText="Choose Class" />
+      <TableView fx:id="tableAttendance" layoutX="79.0" layoutY="207.0" prefHeight="345.0" prefWidth="583.0">
+        <columns>
+          <TableColumn fx:id="colAId" prefWidth="102.39999389648438" text="Attendance ID" />
+          <TableColumn fx:id="colSName" prefWidth="222.40003967285156" text="Student Name" />
+            <TableColumn fx:id="colStatus" prefWidth="259.99993896484375" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSaveAttendance" layoutX="539.0" layoutY="115.0" mnemonicParsing="false" onAction="#OnActionSaveAttendance" text="Save Attendance" />
+   </children>
+</AnchorPane>
