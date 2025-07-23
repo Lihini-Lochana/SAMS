@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="557.0" prefWidth="731.0" style="-fx-background-color: #55efc4;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ijse.sams.controller.LecturerScheduleViewController">
+   <children>
+      <TableView fx:id="tableClasses" layoutX="42.0" layoutY="162.0" prefHeight="306.0" prefWidth="647.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="114.39998817443848" text="Class Schedule ID" />
+            <TableColumn fx:id="colCId" minWidth="0.0" prefWidth="149.60003662109375" text="Course ID" />
+            <TableColumn fx:id="colSubId" prefWidth="142.39996337890625" text="Subject ID" />
+            <TableColumn fx:id="colDate" prefWidth="144.80001831054688" text="Date" />
+            <TableColumn fx:id="colLecId" prefWidth="98.4000244140625" text="Lecturer ID" />
+         </columns>
+      </TableView>
+      <Label layoutX="294.0" layoutY="68.0" text="View Classes">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
