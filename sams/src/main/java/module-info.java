@@ -15,4 +15,5 @@ module com.ijse.sams {
     opens com.ijse.sams.dao to org.hibernate.orm.core;
 
     exports com.ijse.sams;
+    exports com.ijse.sams.controller;
 }
